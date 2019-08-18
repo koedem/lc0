@@ -258,7 +258,7 @@ void Node::RecomputeNfromChildren() {
 
 float Node::GetVisitedPolicy() const { return visited_policy_; }
 
-float Node::GetQ() const {
+double Node::GetQ() const {
   // Currently all certain edges have a corresponding node (PR700) and
   // that nodes q_ is set correctly. If we later allow edges to become
   // certain without creating the node (PR487 through look-ahead-search),
